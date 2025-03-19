@@ -1,0 +1,9 @@
+general:
+  ctf:
+    name: {{ .Env.CTF_NAME }}
+    description: |-
+      {{ .Env.CTF_DESCRIPTION }}
+    urls:
+      - {{ .Env.CTF_URL }}
+    repo:
+      URL: {{ .Env.REPO_URL }}
