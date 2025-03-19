@@ -1,21 +1,19 @@
 ![logo](assets/logo.png)
-{{ $values := (datasource "values") }}
-# {{ $values.general.ctf.name }}
-{{- range $values.general.ctf.urls }}
-- {{ . }}
-{{- end }}
+
+# PascalCTF-2025
+- https://ctf.pascalctf.it/
 
 ## Description
-*{{ $values.general.ctf.description }}*
+*PascalCTF is a Capture The Flag (CTF) competition organized by the team Paolo.*
 
 
 # Results
-**Username:** {{ .Env.CTF_USERNAME }}
+**Username:** arch-err
 
-**Team:** {{ .Env.CTF_TEAM }}
+**Team:** None
 
 
-**Flags:** (0/X)
+**Flags:** (0/0)
 
 ![ ](assets/scoreboard.png)
 ![ ](assets/team-score.png)

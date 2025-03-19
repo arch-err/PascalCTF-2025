@@ -1,9 +1,9 @@
 general:
   ctf:
-    name: {{ .Env.CTF_NAME }}
+    name: PascalCTF-2025
     description: |-
-      {{ .Env.CTF_DESCRIPTION }}
+      PascalCTF is a Capture The Flag (CTF) competition organized by the team Paolo.
     urls:
-      - {{ .Env.CTF_URL }}
+      - https://ctf.pascalctf.it/
     repo:
-      URL: {{ .Env.REPO_URL }}
+      URL: git@github.com:arch-err/PascalCTF-2025.git
