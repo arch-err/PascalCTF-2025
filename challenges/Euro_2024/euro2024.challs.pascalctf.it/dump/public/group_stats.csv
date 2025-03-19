@@ -1,0 +1,26 @@
+group_id,wins,draws,losses,points,ranking,team_name,goal_difference
+A,2,1,0,7,1,Germany,6
+A,1,2,0,5,2,Switzerland,2
+A,1,0,2,3,3,Hungary,-3
+A,0,1,2,1,4,Scotland,-5
+B,3,0,0,9,1,Spain,5
+B,1,1,1,4,2,Italy,0
+B,0,2,1,2,3,Croatia,-3
+B,0,1,2,1,4,Albania,-2
+C,1,2,0,5,1,England,1
+C,0,3,0,3,2,Denmark,0
+C,0,3,0,3,3,Slovenia,0
+C,0,2,1,2,4,Serbia,-1
+D,2,0,1,6,1,Austria,2
+D,1,2,0,5,2,France,1
+D,1,1,1,4,3,Netherlands,0
+D,0,1,2,1,4,Poland,-3
+E,1,1,1,4,1,Romania,1
+E,1,1,1,4,2,Belgium,1
+E,1,1,1,4,3,Slovakia,0
+E,1,1,1,4,4,Ukraine,-2
+F,2,0,1,6,1,Portugal,2
+F,2,0,1,6,2,Turkey,0
+F,1,1,1,4,3,Georgia,0
+F,0,1,2,1,4,Czech Republic,-2
+

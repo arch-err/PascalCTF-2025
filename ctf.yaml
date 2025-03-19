@@ -7,3 +7,22 @@ general:
       - https://ctf.pascalctf.it/
     repo:
       URL: git@github.com:arch-err/PascalCTF-2025.git
+challenges:
+  - name: Base_N_Hex
+  - name: Romagnol_Prometheus
+  - name: Static_Flag
+  - name: Euro_2024
+  - name: Biscotto
+  - name: Romans_Empyre
+  - name: Insanity_check
+  - name: MindBlowing
+  - name: DNS_e_panchetta
+  - name: DNS_e_panchetta
+  - name: Morris_Worm
+  - name: X-Ray
+  - name: My_favourite_number
+  - name: Switcharoo
+  - name: KONtAct_MI
+  - name: E.L.I.A
+  - name: Unpwnable_shop
+  - name: Brainrot_Quiz
