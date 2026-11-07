@@ -13,7 +13,7 @@
 **Team:** None
 
 
-**Flags:** (8/18)
+**Flags:** (9/18)
 
 ![ ](assets/scoreboard.png)
 ![ ](assets/team-score.png)
@@ -37,7 +37,7 @@
 - [ ] [My_favourite_number](challenges/My_favourite_number)
 
 ## reverse
-- [ ] [X-Ray](challenges/X-Ray)
+- [x] [X-Ray](challenges/X-Ray)
 - [ ] [Switcharoo](challenges/Switcharoo)
 - [ ] [KONtAct_MI](challenges/KONtAct_MI)
 
